@@ -1,0 +1,282 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-weight: 500;
+ font-family: Rethink sans;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle at 10% 20%, rgb(151, 10, 130) 0%, rgb(33, 33, 33) 100.2%);
+    /* background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%); */
+  }
+ 
+   .ai-chat {
+    gap: 5%;
+    box-sizing: border-box;
+    width: 70%;
+    /* margin: 10% 0%; */
+    /* display: flex;
+    flex-direction: row; */
+  }
+  .container {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80vh;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+  .bot {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 0rem 1rem 1rem 1rem;
+    box-sizing: border-box;
+    width: 90%;
+     box-shadow: 2px 2px 10px black; 
+    padding: 20px;
+  }
+  @keyframes real {
+    0% {
+      rotate: 0deg;
+    }
+    100% {
+      rotate: -10deg;
+    }
+  }
+
+  #ai {
+     /* filter: drop-shadow(2px 1px 10px black);  */
+    width: 42px;
+  }
+  .client {
+    scrollbar-width: none;
+    gap: 1.2rem;
+    flex-direction: column;
+    display: flex;
+    overflow-y: scroll;
+    color: whitesmoke;
+    border-radius: 1rem 0rem 1rem 1rem;
+    box-sizing: border-box;
+    box-shadow: inset;
+    width: 80%;
+    box-shadow: 2px 2px 3px black;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    padding: 20px;
+  }
+  .userchat {
+    margin: 5% 0%;
+    gap: 4%;
+    display: flex;
+    box-sizing: border-box;
+    width: 60%;
+    right: 6%;
+    position: relative;
+    left: 40%;
+  }
+  .print {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+  }
+  #user {
+    box-sizing: border-box;
+
+    width: 2.5rem;
+    position: absolute;
+    left: 86%;
+  }
+  .bottom {
+    box-sizing: border-box;
+    gap: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    box-shadow: 2px 2px 3px black;
+    color: azure;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    border-radius: 2rem;
+    padding: 3% 2%;
+    border: none;
+    outline: none;
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  input::placeholder {
+    color: azure;
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+  button {
+    box-shadow: 2px 2px 10px black;
+    /* margin: .2rem; */
+    border: none;
+    border-radius: 2rem;
+    height: 3rem;
+    width: 3rem;
+    background-color: black;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  }
+  #addImg {
+    width: 1rem;
+  }
+  #enter {
+    width: 1rem;
+  }
+  .chooseimg {
+    border-radius: 10%;
+    width: 40%;
+  }
+  button:hover {
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.194) 11.2%, rgb(63, 61, 61) 78.9%);
+    border-radius: 2rem;
+    height: 2.8rem;
+    width: 2.8rem;
+    transition: all 0.2s ease-out;
+  }
+  @media (min-width:900px) {
+    
+    * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background: radial-gradient(circle at 10% 20%, rgb(151, 10, 130) 0%, rgb(33, 33, 33) 100.2%);
+        /* background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%); */
+      }
+     
+       .ai-chat {
+        gap: 5%;
+        box-sizing: border-box;
+        width: 70%;
+        /* margin: 10% 0%; */
+        /* display: flex;
+        flex-direction: row; */
+      }
+      .container {
+        padding: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 86vh;
+        overflow: scroll;
+        scrollbar-width: none;
+      }
+      .bot {
+        color: aliceblue;
+        background-color: rgba(0, 0, 0, 0.349);
+        border-radius: 0rem 1rem 1rem 1rem;
+        box-sizing: border-box;
+        width: 90%;
+         box-shadow: 2px 2px 10px black; 
+        padding: 20px;
+      }
+      @keyframes real {
+        0% {
+          rotate: 0deg;
+        }
+        100% {
+          rotate: -10deg;
+        }
+      }
+  
+      #ai {
+         /* filter: drop-shadow(2px 1px 10px black);  */
+        width: 42px;
+      }
+      .client {
+        scrollbar-width: none;
+        gap: 1.2rem;
+        flex-direction: column;
+        display: flex;
+        overflow-y: scroll;
+        color: whitesmoke;
+        border-radius: 1rem 0rem 1rem 1rem;
+        box-sizing: border-box;
+        box-shadow: inset;
+        width: 80%;
+        box-shadow: 2px 2px 3px black;
+        background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+        padding: 20px;
+      }
+      .userchat {
+        margin: 3% 0%;
+        gap: 4%;
+        display: flex;
+        box-sizing: border-box;
+        width: 60%;
+        /* right: 6%; */
+        position: relative;
+        left: 46%;
+      }
+      .print {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+      }
+      #user {
+        box-sizing: border-box;
+  
+        width: 2.5rem;
+        position: absolute;
+        left: 83%;
+      }
+      .bottom {
+        box-sizing: border-box;
+        gap: 1%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        box-shadow: 2px 2px 3px black;
+        color: azure;
+        background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+        border-radius: 2rem;
+        padding: 2% 2%;
+        border: none;
+        outline: none;
+        width: 50%;
+        font-size: 1rem;
+      }
+  
+      input::placeholder {
+        color: azure;
+        font-size: 1rem;
+        text-transform: capitalize;
+      }
+      button {
+        box-shadow: 2px 2px 10px black;
+        /* margin: .2rem; */
+        border: none;
+        border-radius: 2rem;
+        height: 4rem;
+        width: 4rem;
+        background-color: black;
+        background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+      }
+      #addImg {
+        width: 1rem;
+      }
+      #enter {
+        width: 1rem;
+      }
+      .chooseimg {
+        border-radius: 10%;
+        width: 40%;
+      }
+      button:hover {
+        background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.194) 11.2%, rgb(63, 61, 61) 78.9%);
+        border-radius: 2rem;
+        height: 2.8rem;
+        width: 2.8rem;
+        transition: all 0.2s ease-out;
+      }
+  }
